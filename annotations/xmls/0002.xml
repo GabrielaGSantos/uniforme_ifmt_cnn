@@ -1,7 +1,7 @@
 <annotation>
-	<folder>images-redimensionadas</folder>
+	<folder>images</folder>
 	<filename>0002.jpg</filename>
-	<path>C:\Users\Gabriela\Pictures\images-redimensionadas\0002.jpg</path>
+	<path>/home/gabriela/Documentos/uniforme_ifmt_cnn/images/0002.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>461</xmin>
-			<ymin>3</ymin>
-			<xmax>1116</xmax>
-			<ymax>716</ymax>
+			<xmin>467</xmin>
+			<ymin>6</ymin>
+			<xmax>1122</xmax>
+			<ymax>719</ymax>
 		</bndbox>
 	</object>
 </annotation>
