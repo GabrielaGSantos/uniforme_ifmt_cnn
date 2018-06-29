@@ -1,7 +1,7 @@
-<annotation>
+<annotation verified="yes">
 	<folder>images</folder>
 	<filename>0001.jpg</filename>
-	<path>/home/gabriela/Documentos/uniforme_ifmt_cnn/images/0001.jpg</path>
+	<path>./images\0001.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,9 +17,9 @@
 		<truncated>1</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>5</xmin>
+			<xmin>17</xmin>
 			<ymin>5</ymin>
-			<xmax>657</xmax>
+			<xmax>669</xmax>
 			<ymax>720</ymax>
 		</bndbox>
 	</object>

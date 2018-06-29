@@ -62,7 +62,7 @@ def get_class_name_from_filename(file_name):
     else:
         None
   match = re.match(r'([A-Za-z_]+)(_[0-9]+\.jpg)', file_name, re.I)
-  return match.groups()[0]
+  return 'uniforme_ifmt'
 
 
 def dict_to_tf_example(data,
@@ -186,7 +186,7 @@ def dict_to_tf_example(data,
     if mask_type == 'numerical':
       mask_stack = np.stack(masks).astype(np.float32)
       masks_flattened = np.reshape(mask_stack, [-1])
-      feature_dict['image/object/mask'] = (
+      feature_dict['image/object/masks'] = (
           dataset_util.float_list_feature(masks_flattened.tolist()))
     elif mask_type == 'png':
       encoded_mask_png_list = []
@@ -227,7 +227,7 @@ def create_tf_record(output_filename,
     if idx % 100 == 0:
       logging.info('On image %d of %d', idx, len(examples))
     xml_path = os.path.join(annotations_dir, 'xmls', example + '.xml')
-    mask_path = os.path.join(annotations_dir, 'trimaps', example + '.png')
+    mask_path = os.path.join(annotations_dir, 'masks', example + '.png')
 
     if not os.path.exists(xml_path):
       logging.warning('Could not find %s, ignoring example.', xml_path)

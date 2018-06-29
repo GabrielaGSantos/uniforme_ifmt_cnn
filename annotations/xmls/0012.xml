@@ -1,7 +1,7 @@
 <annotation>
 	<folder>images</folder>
 	<filename>0012.jpg</filename>
-	<path>/home/gabriela/Documentos/uniforme_ifmt_cnn/images/0012.jpg</path>
+	<path>./images\0012.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
